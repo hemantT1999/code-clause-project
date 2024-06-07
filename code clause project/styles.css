@@ -1,0 +1,144 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: bold; /* Making all fonts bold */
+}
+
+/* Container */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+header h1 {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero Section */
+#hero {
+  background: #f4f4f4;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+#hero .button {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 1rem;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+/* Features Section */
+#features {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature {
+  flex: 1;
+  margin: 0 10px;
+  max-width: 300px;
+}
+
+/* Testimonials Section */
+#testimonials {
+  background: #f4f4f4;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.testimonials-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  flex: 1;
+  margin: 0 10px;
+  max-width: 300px;
+  text-align: center;
+}
+
+/* Call-to-Action Section */
+#cta {
+  background: #333;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+#cta .button {
+  background: #ff6b6b;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .features-list,
+  .testimonials-list {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .feature,
+  .testimonial {
+    margin: 1rem 0;
+  }
+}
